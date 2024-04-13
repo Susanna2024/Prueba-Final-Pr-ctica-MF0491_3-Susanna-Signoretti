@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Calculadora KCAL</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Calculadora KCAL</h1>
+
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-6">
+                <label for="alimento">Elije alimentos:</label>
+                <select id="alimento" class="form-control">
+                    <option value="banana">Banana</option>
+                    <option value="berenjena">Berenjena</option>
+                    <option value="hamburger">Hamburger</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" min="1" value="1" class="form-control">
+            </div>
+            <div class="col-md-3">
+                <!-- empy space -->
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <button onclick="agregarAlimento()" class="btn btn-primary btn-block">Agregar Alimentos</button>
+            </div>
+        </div>
+
+        <div id="resultados" class="text-center mt-5">
+            <h2>Contenido Nutricional Total</h2>
+            <p id="total-calorias">Calorías: Kcal 0</p>
+            <p id="total-proteinas">Proteínas: 0g</p>
+            <p id="total-carbohidratos">Carbohidratos: 0g</p>
+            <p id="total-grasas">Grasas: 0g</p>
+            <p id="objetivos-mensaje"></p>
+        </div>
+    </div>
+
+    <section id="resultadosComparacion">
+        <!-- Aquí se mostrarán los resultados -->
+        </section>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
