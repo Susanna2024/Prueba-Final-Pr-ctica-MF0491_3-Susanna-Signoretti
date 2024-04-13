@@ -45,7 +45,7 @@ const objetivosUsuario = {
 };
 
 // Función para agregar un alimento seleccionado
-function agregarAlimento() {
+function NutriAlimento() {
     // Obtener los elementos del formulario
     const select = document.getElementById("alimento");
     const cantidad = parseInt(document.getElementById("cantidad").value);
