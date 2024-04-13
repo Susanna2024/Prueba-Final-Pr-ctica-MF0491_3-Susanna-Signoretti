@@ -95,8 +95,5 @@ function mostrarResultados() {
     document.getElementById("total-carbohidratos").textContent = `Carbohidratos: ${totalCarbohidratos}g`;
     document.getElementById("total-grasas").textContent = `Grasas: ${totalGrasas}g`;
 
-    // Comparar los resultados con los objetivos del usuario y mostrar un mensaje
-    const mensajeObjetivos = compararConObjetivos({calorias: totalCalorias, proteinas: totalProteinas, carbohidratos: totalCarbohidratos, grasas: totalGrasas}, objetivosUsuario);
-    document.getElementById("objetivos-mensaje").textContent = mensajeObjetivos;
 }
 
